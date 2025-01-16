@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sign from "./models/Sign";
 import Login from "./models/Login";
-import Java from "./Code/java";
+import Java from "./Code/Java.jsx";
 import Navbar from "./components/Navbar";
 import Python from "./Code/Python";
 import C from "./Code/C";

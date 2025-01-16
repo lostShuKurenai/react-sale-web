@@ -4,7 +4,6 @@ import "prismjs/themes/prism.css"; // Choose a theme
 import "prismjs/components/prism-java"; // Load Java syntax highlighting
 import "../styles/java.css";
 import java1 from "../Images/java.png";
-import java from "../images/java.jpg";
 import bg from "../Images/JavaBackground.png";
 import jdk from "../Images/jdk.jpg";
 import java3 from "../Images/java3.jpg";
