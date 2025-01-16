@@ -1,0 +1,46 @@
+/* Example styles */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  height: 60vh;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.cta-button {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.about, .features, .services, .testimonials, .cta {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-card {
+  padding: 20px;
+  background-color: #2f3dff;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.features{
+  margin-left: 119px;
+  margin-top: 50px;
+}
+
+.services{
+  margin-top: 50px;
+  margin-right: -120px;
+
+}
+
