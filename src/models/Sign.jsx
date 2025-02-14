@@ -27,7 +27,7 @@ const Sign = () => {
   };
 
   return (
-    <div className="video-container" style={{ position: "relative" }}>
+    <div className="video-container" style={{ position: "cover" }}>
       <video
         autoPlay
         loop
@@ -42,35 +42,35 @@ const Sign = () => {
         className="container"
         style={{
           position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)", // Center the form
-          backgroundImage: `linear-gradient(
-          to bottom right,
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.5)
-        ), url(${img})`, // Add a gradient overlay
-          backgroundSize: "cover", // Make the image cover the entire container
-          backgroundPosition: "center", // Center the image
-          filter: "brightness(1.2)", // Increase brightness (default is 1)
-          height: "500px", // Slightly taller for aesthetic spacing
-          width: "450px",
-          border: "1px solid rgba(255, 255, 255, 0.2)", // Subtle border
-          color: "white",
-          fontSize: "larger",
-          fontWeight: "600",
-          padding: "30px",
-          borderRadius: "12px", // More rounded corners
-          zIndex: 2,
-          boxShadow: "0px 8px 20px rgba(0,0,0,0.5)", // Deeper shadow
-          backdropFilter: "blur(10px)", // Glassmorphism effect
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)", // Center the form
+                      backgroundImage: `linear-gradient(
+                        to bottom right,
+                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.5)
+                      ), url(${img})`, // Add a gradient overlay
+                      backgroundSize: "cover", // Make the image cover the entire container
+                      backgroundPosition: "center", // Center the image
+                      filter: "brightness(1.2)", // Increase brightness (default is 1)
+                      height: "500px", // Slightly taller for aesthetic spacing
+                      width: "450px",
+                      border: "1px solid rgba(255, 255, 255, 0.2)", // Subtle border
+                      color: "white",
+                      fontSize: "larger",
+                      fontWeight: "600",
+                      padding: "30px",
+                      borderRadius: "12px", // More rounded corners
+                      zIndex: 2,
+                      boxShadow: "0px 8px 20px rgba(0,0,0,0.5)", // Deeper shadow
+                      backdropFilter: "blur(10px)", // Glassmorphism effect
         }}
       >
-        <h1 style={{ textAlign: "center", marginTop: "5px" , color:"white" }}>Sign-in Form</h1>
+        <h1 style={{ textAlign: "center", marginBottom:"20px", fontSize:"38px", color:"white", fontWeight: "bold" }}>Sign-in Form</h1>
         <form action="/login" onSubmit={handleSubmit}>
           <div className="mb-3 mt-3" style={{ color: "white" }}>
             <label htmlFor="username" className="form-label"
-            style={{color:"white"}}
+            style={{ fontWeight: "500", color:"white"}}
             >
               UserName:
             </label>

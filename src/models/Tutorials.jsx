@@ -1,6 +1,5 @@
 import React from "react";
 import "./Tutorials.css";
-import anime3 from "../Images/anime3.mp4";
 import tut from "../Images/tut.jpg"
 const Tutorials = () => {
   return (
