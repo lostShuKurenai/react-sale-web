@@ -44,3 +44,99 @@
 
 }
 
+.responsive-img {
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  height: 600px; /* Default height */
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    height: 600px; /* Reduce height for tablet screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    height: 600px; /* Further reduce height for small mobile screens */
+  }
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+
+/* Responsive Flex Containers */
+.container,
+.container2,
+.last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align child elements */
+  gap: 20px; /* Space between items */
+  width: 100%; /* Ensure full width */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Styles for Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .container,
+  .container2,
+  .last {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .about,
+  .features,
+  .services,
+  .testimonials,
+  .cta {
+    width: 90%; /* Use most of the screen without overflowing */
+    margin: 10px auto;
+  }
+
+  .service-card,
+  .testimonial {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Responsive Styles for Small Screens (Mobiles) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Reduce font size for mobile */
+  }
+
+  .about,
+  .features,
+  .services,
+  .testimonials,
+  .cta {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
