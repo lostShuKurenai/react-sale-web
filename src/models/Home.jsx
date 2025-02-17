@@ -118,7 +118,7 @@ const Home = () => {
       padding: "50px",
       borderRadius: "10px",
       boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-      backgroundColor: "black"
+      background: "Black",
     }}
   >
     <h2>Who We Are</h2>
